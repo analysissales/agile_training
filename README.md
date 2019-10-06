@@ -15,7 +15,7 @@ You can also use VScode terminal.
 
 Step-3:
 Paste the command
-git clone https://github.com/analysissales/agile_training.git
+"git clone https://github.com/analysissales/agile_training.git"
 
 Step-4:
 pip install virtualenv
