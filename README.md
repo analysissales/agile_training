@@ -11,13 +11,14 @@ Navigate to the folder where you want to clone the project.
 
 Step-2:
 open terminal(On windows git bash is preferable).
-You can also use VScode terminal. 
+You can also use VScode terminal.DO NOT USE POWERSHELL IN WINDOWS.
 
 Step-3:
 Paste the command
 "git clone https://github.com/analysissales/agile_training.git"
 
 Step-4:
+cd agile_training
 pip install virtualenv
 
 Step-5:
