@@ -19,6 +19,7 @@ Paste the command
 
 Step-4:
 cd agile_training
+then,
 pip install virtualenv
 
 Step-5:
