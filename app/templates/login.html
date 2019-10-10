@@ -42,47 +42,39 @@
     </nav>
 </div>
 
-<div id="particles-js"></div>
-<!-- /.particles div -->
+<div id="particles-js" style="height: 100%; width: 100%; position: absolute; background-size: cover; min-height: 100%; background-attachment: fixed;"></div>
 
-<div class="container mt-5">
+  <div class="container mt-5">
     <div class="row">
       <div class="col-md-6 ml-auto mr-auto" style="margin-top: 150px;">
-        <div class="card bg-custom-1 mb-5">
-          <h3 class="card-header">Sign In</h3>
+        <div class="card bg-secondary mb-5">
+          <h3 class="card-header" style="align-items: center; font-family: lato; color:ivory position: relative; text-align: center;">LOGIN</h3>
           <div class="card-body">
             <div class="row">
               <div class="col-md-8 ml-auto mr-auto">
-                <form action="" method="POST" novalidate>
-                    {{ form.hidden_tag() }}
-                  <div class="form-group">
-                    <!-- <label for="exampleInputEmail1">Email address</label> -->
-                    {{ form.company_name.label }}
-                    {{ form.company_name }}
-                    {% for error in form.company_name.errors %}
-                       <span style="color: red;">[{{ error }}]</span>
-                    {% endfor %}
-                    <!-- <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"> -->
-                    <!-- <small id="emailHelp" class="form-text text-light">We'll never share your email with anyone else.</small> -->
-                  </div>
-                  <div class="form-group">
-                    <!-- <label for="exampleInputPassword1">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"> -->
-                    {{ form.password.label }}<br>
-                    {{ form.password }}
-                    {% for error in form.password.errors %}
-                        <span style="color: red;">[{{ error }}]</span>
-                    {% endfor %}
-                  </div>
-                  <div class="form-group form-check">
-                    <!-- <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">Remember me</label> -->
-                    {{ form.remember_me }}
-                    {{ form.remember_me.label }}
-                  </div>
-                  <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
-                  {{ form.submit() }}
-                </form>
+                  <form action="" method="POST" novalidate>
+                      {{ form.hidden_tag() }}
+                    <div class="form-group" id="sname" style="font-family: lato; font-size: 1em; color: black">
+                      {{ form.company_name.label }}
+                      <br>
+                      {{ form.company_name }}
+                      {% for error in form.company_name.errors %}
+                         <span style="color: red;">[{{ error }}]</span>
+                      {% endfor %}
+                    </div>
+                    <div class="form-group" style="font-family: lato; font-size: 1em; color: black">
+                      {{ form.password.label }}<br>
+                      {{ form.password }}
+                      {% for error in form.password.errors %}
+                          <span style="color: red;">[{{ error }}]</span>
+                      {% endfor %}
+                    </div>
+                    <div class="form-group form-check">
+                      {{ form.remember_me }}
+                      {{ form.remember_me.label }}
+                    </div>
+                    {{ form.submit() }}
+                  </form>
               </div>
             </div>
           </div>
@@ -90,7 +82,6 @@
       </div>
     </div>
   </div>
-
 
 <link href="static/css/login.css" rel="stylesheet">
 

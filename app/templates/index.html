@@ -2,49 +2,128 @@
 
 {% block head %}
 
+<link href="static/css/main.css" rel="stylesheet">
+
 {% endblock %}
 
 {% block body %}
 <div class="container">
-        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark" id="navscroll">
-          <a class="navbar-brand" href="#">ShopLifters</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About Us</a>
-              </li>
-              <li class="nav-item">
-                    <a class="nav-link" href="#">Contact Us</a>
-                  </li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-              <!-- <li class="nav-item">
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark" id="navscroll">
+    <a class="navbar-brand" href="#">ShopLifters</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact Us</a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <!-- <li class="nav-item">
                 <a class="nav-link" href="/login">Login</a>
               </li> -->
-              <li class="nav-item">
-                  {% if current_user.is_anonymous %}                   
-                        <a class="nav-link" href="/login">Login</a>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/register">Register</a>
-                        </li>
-                  {% else %}
-                        <a class="nav-link" href="/logout">Logout</a>
-                  {% endif %}
-                </li>
-              
-            </ul>
-          </div>
-        </nav>
-        </div>
+        <li class="nav-item">
+          {% if current_user.is_anonymous %}
+          <a class="nav-link" href="/login">Login</a>
+        <li class="nav-item">
+          <a class="nav-link" href="/register">Register</a>
+        </li>
+        {% else %}
+        <a class="nav-link" href="/logout">Logout</a>
+        {% endif %}
+        </li>
+
+      </ul>
+    </div>
+  </nav>
+</div>
+
+<div class="wrapper" style="background: url('static/img/imgs.png') no-repeat center center fixed; height: 100vh;
+width: 100%;
+position: relative;
+background-size: cover;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: 100% 100%;
+opacity: 1;">
+
+</div>
+
+<style>
+  .sinfo {
+    background: rgba(255, 255, 255, 0.35);
+    padding: 2em;
+    border-radius: 1em;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    margin-top: 10px;
+    opacity: 1;
+    background-color: #fff;
+    mix-blend-mode: luminosity;
+    z-index: 5;
+    align-content: center;
+  }
+
+  .topinfo {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 3em;
+    padding-left: 3em;
+  }
+
+  hr {
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.75) 50%, rgba(0, 0, 0, 0) 100%);
+  }
+</style>
+<section>
+  <div class="topinfo">
+    <div class="sinfo">
+      <p>
+        <br>
+        <h1><strong>Heading</strong></h1>
+        <hr />
+        <br>
+        <h3><strong>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+            leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+            with
+            the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+            publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+          </strong>
+        </h3>
+      </p>
+      <br>
+      <br>
+      <button type="button" class="btn btn-outline-success" style="left: 50%; position: relative;">Analysis</button>
+    </div>
+
+  </div>
+</section>
 
 
+<link href="/static/css/main.css" rel="stylesheet">
 
+<script>
+
+  $(window).scroll(function () {
+    $(".topinfo").css({ "marginTop": -($(window).scrollTop()) / 8 + "px", "marginLeft": ($(window).scrollLeft()) + "px" });
+  });
+</script>
 {% endblock %}
