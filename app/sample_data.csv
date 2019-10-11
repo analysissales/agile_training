@@ -1,0 +1,20 @@
+Date,Time,Customer ID,Bill no.,Product Name,Quantity,Total Price,Payment method
+09/10/2019,9:30 AM,501,1,Bread,2,40,Cash
+09/10/2019,10:00 AM,502,2,Milk,3,60,Paytm
+09/10/2019,11:30 AM,503,3,Bread,1,20,Cash
+09/10/2019,12:00 PM,504,4,Milk,2,40,Paytm
+09/10/2019,1:30 PM,505,5,Bread,1,20,Cash
+09/10/2019,1:45 PM,506,6,Bread,1,20,Cash
+09/10/2019,2:30 PM,507,7,Maggi,4,48,Cash
+09/10/2019,4:00 PM,508,8,Coffee,5,10,Cash
+09/10/2019,4:15 PM,502,9,Coffee,7,14,Cash
+09/10/2019,4:20 PM,509,10,Milk,2,40,Cash
+09/10/2019,5:00 PM,517,11,Coffee,4,8,Cash
+09/10/2019,6:15 PM,543,12,Milk,1,20,Cash
+09/10/2019,6:30 PM,508,13,Maggi,1,12,Cash
+09/10/2019,7:00 PM,550,14,Maggi,2,24,Cash
+09/10/2019,7:15 PM,555,15,Oats,1,25,Cash
+09/10/2019,7:20 PM,590,16,Eggs,6,30,Cash
+09/10/2019,7:30 PM,520,17,Eggs,12,60,Paytm
+09/10/2019,7:45 PM,540,18,Oats,2,50,Paytm
+09/10/2019,7:50 PM,545,19,Eggs,6,30,Cash
